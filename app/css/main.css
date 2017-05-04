@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url("../assets/fonts/MaterialIcons-Regular.woff2") format('woff2'), url("../assets/fonts/MaterialIcons-Regular.woff") format('woff'), url("../assets/fonts/MaterialIcons-Regular.ttf") format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px /* Preferred icon size */;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+/* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+/* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  background: #eceff1;
+}
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+header {
+  display: flex;
+  align-items: center;
+  height: 170px;
+  background: #2196f3;
+  color: #fff;
+  padding: 16px;
+}
+header .right_panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+header .right_panel .preloader-wrapper {
+  display: none;
+  margin-right: 16px;
+}
+header .right_panel .clock {
+  font-size: 50px;
+}
+header .right_panel .weather_forecast {
+  cursor: pointer;
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+}
+header .slogan {
+  cursor: pointer;
+  width: 100%;
+  font-size: 100px;
+}
+header .slogan_display {
+  display: none;
+}
+header .slogan_edit {
+  margin: 0px;
+  display: block;
+}
+header .slogan_edit .slogan_input {
+  border: none;
+  box-shadow: none;
+  height: auto;
+  margin: 0px;
+  font-size: 100px;
+}
+header .slogan_edit .slogan_input:focus {
+  border: none;
+  box-shadow: none;
+}
+header .slogan_edit .slogan_input::-webkit-input-placeholder {
+  color: rgba(255,255,255,0.5);
+}
+main {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  top: 32px;
+  padding: 32px;
+  color: #fff;
+  font-size: 20px;
+}
+main .modal {
+  color: #000;
+}
+main .add-task-btn {
+  position: absolute;
+  top: -28px;
+  right: 40px;
+}
+main .tasks {
+  max-height: 700px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .tasks .task-container {
+  width: 48%;
+}
+main .tasks .task-container img {
+  max-height: 200px;
+  max-width: 100%;
+}
+main .tasks .task-container .task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0px;
+}
+main .tasks .task-container .task .task-text {
+  border-right: 1px solid #fff;
+  padding-right: 8px;
+  width: 100%;
+}
+main .tasks .task-container .task .done-btn {
+  cursor: pointer;
+  height: 100%;
+  padding-right: 24px;
+  padding-left: 24px;
+}

@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../assets/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../assets/fonts/MaterialIcons-Regular.woff) format('woff'),
+    url(../assets/fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons 
+    font-family 'Material Icons'
+    font-weight normal
+    font-style normal
+    font-size 24px  /* Preferred icon size */
+    display inline-block
+    line-height 1
+    text-transform none
+    letter-spacing normal
+    word-wrap normal
+    white-space nowrap
+    direction ltr
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing antialiased
+    /* Support for Safari and Chrome. */
+    text-rendering optimizeLegibility
+
+
+base_font_size=16px
+
+h1_font_size=42px
+h2_font_size=36px
+h3_font_size=24px
+h4_font_size=20px
+h5_font_size=16px
+h6_font_size=14px
+
+header_font_size=100px
+
+main_color=#2196f3
+background_color=#eceff1
+
+
+
+body
+    padding 0px
+    margin 0px
+    background background_color
+    
+body, html
+    font-family "Roboto", sans-serif
+    height 100%
+    width 100%
+    
+
+header
+    display flex
+    align-items center
+    height 170px
+    background main_color
+    color white
+    padding 16px
+    
+    .right_panel
+        display flex
+        flex-direction column
+        justify-content center
+        align-items flex-end
+        text-align center
+        
+        .preloader-wrapper
+            display none
+            margin-right 16px
+    
+        .clock
+            font-size header_font_size*0.5
+            
+        .weather_forecast
+            cursor pointer
+            display flex
+            font-size header_font_size*0.5
+            justify-content center
+            align-items center
+        
+    .slogan
+        cursor pointer
+        width 100%
+        font-size header_font_size
+        
+        &_display
+            display none
+        &_edit
+            margin 0px
+            display block
+            .slogan_input
+                border none
+                box-shadow none
+                //border-bottom 1px solid main_color
+                height auto
+                margin 0px
+                font-size header_font_size
+                &:focus
+                    border none
+                    box-shadow none
+                    //border-bottom 1px solid white
+                &::-webkit-input-placeholder
+                    color rgba(255, 255, 255, 0.5)
+main
+    width 1200px
+    //height 500px
+    margin 0 auto
+    background white
+    position relative
+    top 32px
+    padding 32px
+    color white
+    font-size h4_font_size
+    .modal
+        color black
+    .add-task-btn
+        position absolute
+        top -28px
+        right 40px
+    
+    .tasks
+        max-height 700px
+        display flex
+        flex-direction column
+        flex-wrap wrap
+        justify-content space-between
+        .task-container
+            width 48%
+            img 
+                max-height 200px
+                max-width 100%
+            .task
+                display flex
+                flex-direction row
+                justify-content space-between
+                align-items center
+                padding-right 0px
+                .task-text
+                    border-right 1px solid white
+                    padding-right 8px
+                    width 100%
+                .done-btn
+                    cursor pointer
+                    height 100%
+                    padding-right 24px
+                    padding-left 24px
+        
+         

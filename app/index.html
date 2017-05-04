@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dexi new tab</title>
+
+        <!-- -->
+        <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/main.css">
+    
+
+        
+
+        <!-- Main logic -->
+        
+    
+    </head>
+    <body>
+        <header>
+            <div class="slogan">
+                <div class="slogan_display">Dream big!</div>
+                <div class="slogan_edit input-field">
+                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Type your slogan of the day" id="slogan_input" type="text" class="slogan_input">
+                </div>
+            </div>
+            <div class="right_panel">
+                <div class="clock">
+                    <span class="hours" id="clock_hours">4</span><span class="delimiter">:</span><span class="minutes" id="clock_minutes">20</span>
+                </div>
+                <div class="preloader-wrapper small active" id="weather_preloader">
+                    <div class="spinner-layer spinner-red-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                        <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="weather_forecast" id="weather_forecast">
+                    <img src="" alt="" class="weather_icon" id="weather_icon">
+                    <span class="temperature" id="weather_temperature"></span>
+                </div>
+            </div>
+        </header>
+
+        <main class="z-depth-2">
+
+            <div id="modal_note" class="modal">
+                <div class="modal-content">
+                    <h4>Enter your note</h4>
+                    <div class="input-field">
+                        <textarea id="textarea_task" class="materialize-textarea"></textarea>
+                        <label for="textarea_task">Your note</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="task_text_end">Done</a>
+                </div>
+            </div>
+         
+
+            <a class="btn-floating btn-large waves-effect waves-light red add-task-btn" id="add_task_btn"><i class="material-icons">add</i></a>
+            <div class="tasks" id="tasks">
+                <!-- <div class="task-container">
+                    <div class="card-panel task teal">
+                        <div class="task-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt esse, quidem. Consectetur aperiam, atque, ducimus amet ipsa inventore delectus porro! Quos maiores laboriosam exercitationem dolor fugiat, veniam consequuntur, neque eveniet!</div>
+                        <div class="done-btn material-icons">clear</div>
+                    </div>
+                </div> -->
+            
+                
+            </div>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+        <script src="scripts/materialize.js"></script>
+        <script src="scripts/marked.min.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Dexi",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "An advanced new tab page with nice features",
+    "description": "The description of the application"
+  }
+}
